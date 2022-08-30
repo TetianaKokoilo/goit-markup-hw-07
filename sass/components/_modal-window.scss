@@ -42,15 +42,18 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: border $transition-duration $transition-timing-function,
+  fill $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+      fill: $accent-color;
+    }
 }
 .modal__icon {
   position: absolute;
   display: inline-block;
-  transition: fill $transition-duration $transition-timing-function;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
+  
 }
 
 .modal__title {
@@ -122,7 +125,6 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  margin-bottom: 20px;
   outline: none;
   cursor: pointer;
   &:focus {
