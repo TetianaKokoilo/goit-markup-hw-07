@@ -1,0 +1,66 @@
+.form {
+  display: block;
+}
+.form__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-title-color;
+}
+
+.newsletter {
+  display: flex;
+}
+.newsletter__email {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  color: $main-title-color;
+  cursor: pointer;
+
+  transition: border $transition-duration $transition-timing-function;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+
+.newsletter__btn {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $main-title-color;
+  background-color: $background-btn-color;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-bnt-color;
+  }
+}
+
+.newsletter__icon {
+  margin-left: 10px;
+  fill: $primary-btn-color;
+}

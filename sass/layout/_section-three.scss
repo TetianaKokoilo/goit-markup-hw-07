@@ -1,0 +1,49 @@
+.work {
+  padding-bottom: 94px;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+.title--page-title {
+  padding-top: 0;
+}
+.photo {
+  @extend %list;
+  display: flex;
+}
+.photo__item {
+  margin-right: 30px;
+  position: relative;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.overview {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.overview__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-title-color;
+}
