@@ -387,6 +387,21 @@ img {
   margin-right: 0;
 }
 
+.lists__link {
+  display: block;
+  margin-left: auto;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.lists__link:hover.lists__link--current, .lists__link:focus.lists__link--current {
+  color: #2196f3;
+}
+
 .lists__link--current {
   position: relative;
 }
@@ -403,21 +418,6 @@ img {
 }
 
 .lists__link .lists__link--current {
-  color: #2196f3;
-}
-
-.lists__link {
-  display: block;
-  margin-left: auto;
-  padding: 32px 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.lists__link:hover.lists__link--current, .lists__link:focus.lists__link--current {
   color: #2196f3;
 }
 
