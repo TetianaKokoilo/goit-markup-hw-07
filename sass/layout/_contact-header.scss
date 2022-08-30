@@ -18,10 +18,8 @@
   color: $primary-text-color;
 
   transition: color $transition-duration $transition-timing-function;
-  &:hover {
-    color: $accent-color;
-  }
-  &:focus {
+  &:hover,
+  &:focus {    
     color: $accent-color;
   }
 }

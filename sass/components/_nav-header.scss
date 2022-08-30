@@ -47,9 +47,7 @@
   color: $title-text-color;
 
   transition: color $transition-duration $transition-timing-function;
-  &:hover {
-    color: $accent-color;
-  }
+  &:hover,
   &:focus {
     color: $accent-color;
   }
