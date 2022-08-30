@@ -30,10 +30,10 @@
     left: 0;
     bottom: 0;
   }
-  .lists__link & {
+}
+.lists__link .lists__link--current {
     color: $accent-color;
   }
-}
 .lists__link {
   @extend %link;
   display: block;
@@ -47,8 +47,8 @@
   color: $title-text-color;
 
   transition: color $transition-duration $transition-timing-function;
-  &:hover,
-  &:focus {
+  &:hover.lists__link--current,
+  &:focus.lists__link--current {
     color: $accent-color;
   }
 }
