@@ -4,16 +4,20 @@
   align-items: center;
   margin-right: auto;
 }
+
 .lists {
   @extend %list;
   display: flex;
 }
+
 .lists__item {
   margin-right: 50px;
+
   &:last-child {
     margin-right: 0;
   }
 }
+
 .lists__link {
   @extend %link;
   display: block;
@@ -28,13 +32,18 @@
 
   transition: color $transition-duration $transition-timing-function;
 
-  &:hover.lists__link--current,
-  &:focus.lists__link--current {
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--current {
     color: $accent-color;
   }
 }
+
 .lists__link--current {
   position: relative;
+
   &::after {
     content: '';
 
@@ -49,7 +58,3 @@
     bottom: 0;
   }
 }
-.lists__link .lists__link--current {
-    color: $accent-color;
-  }
-
